@@ -20,9 +20,10 @@ $sudo passwd [username]
 ```
 
 ### Increase the RAM for RStudio server or increase swapfile
-These instructions were necessary to increase memory and get around issues with RStudio being unable to allocate sufficent memory to install knitr or load certain packages. Instructions are based on the instructions found here:
 
-https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
+The best solution is to use a larger AWS instance with more RAM rather than using a swap file which will be far slower.
+
+These instructions were necessary to increase memory and get around issues with RStudio being unable to allocate sufficent memory to install knitr or load certain packages. Instructions are based on the instructions found here: https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
 ```bash
 
  # check to see if there is an existing swap
@@ -87,3 +88,10 @@ To prevent the file from being world-readable, you should set up the correct per
 $ sudo chown root:root /swapfile 
 $ sudo chmod 0600 /swapfile
 ```
+
+## Configuring Python
+1. Python
+2. IPython notebooks and jupyter
+3. rodeo for a similar kind of interface to Rstudio
+
+## Configuring 
