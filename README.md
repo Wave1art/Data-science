@@ -94,4 +94,4 @@ $ sudo chmod 0600 /swapfile
 2. IPython notebooks and jupyter
 3. rodeo for a similar kind of interface to Rstudio
 
-## Configuring 
+## Configuring python webserver
