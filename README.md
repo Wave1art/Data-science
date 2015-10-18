@@ -75,4 +75,15 @@ then it worked.
  $ sudo swapon /swapfile
 
 ```
+Swappiness in the file should be set to 10. Skipping this step may cause both poor performance, whereas setting it to 10 will cause swap to act as an emergency buffer, preventing out-of-memory crashes.
 
+You can do this with the following commands:
+```bash
+$ echo 10 | sudo tee /proc/sys/vm/swappiness
+$ echo vm.swappiness = 10 | sudo tee -a /etc/sysctl.conf
+```
+To prevent the file from being world-readable, you should set up the correct permissions on the swap file:
+```bash
+$ sudo chown root:root /swapfile 
+$ sudo chmod 0600 /swapfile
+```
