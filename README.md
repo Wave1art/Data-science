@@ -49,15 +49,20 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
 
  # To make it use this swap every time the machine is started
  # Add this to /etc/fstab:
- /swapfile swap swap defaults 0 0
+  /swapfile swap swap defaults 0 0
+ 
+ $ sudo chmod 666 /etc/fstab
+ $ vim /etc/fstab
+ 
+ 
 ```
 
-This wasn't enough to install knitr, so I increased it to 1G of swap,
+This wasn't enough to install knitr, so I increased it to 2GB of swap,
 then it worked.
 
 ```bash
 
- # To resize the swap to 1G instead of 256Mb
+ # To resize the swap to 1GB instead of 256Mb
  $ sudo /sbin/swapoff /swapfile
  $ sudo rm /swapfile
  $ sudo /bin/dd if=/dev/zero of=/swapfile bs=1M count=1024
