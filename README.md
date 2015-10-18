@@ -58,7 +58,7 @@ These instructions were necessary to increase memory and get around issues with 
  
 ```
 
-This wasn't enough to install knitr, so I increased it to 2GB of swap,
+This wasn't enough to install knitr, so I increased it to 1GB of swap,
 then it worked.
 
 ```bash
