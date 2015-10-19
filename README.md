@@ -2,6 +2,9 @@
 
 Notes for configuring AWS for use with various data science tools on Ubuntu trusty installation.
 
+## Ubuntu configuration
+The configuration is Ubuntu trusty 10.4  on a EC2 instance.
+
 
 ## Rstudio Server
 Follow the installation steps on the RStudio Server website. In particular note the section regarding public keys to access the repositories. This must be done before the install or upgrade commandes will work.
