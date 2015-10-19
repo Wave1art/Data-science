@@ -5,6 +5,24 @@ Notes for configuring AWS for use with various data science tools on Ubuntu trus
 ## Ubuntu configuration
 The configuration is Ubuntu trusty 10.4  on a EC2 instance.
 
+### Ubuntu startup scripts
+The .bashrc file is used to make a number of changes on startup. These changes are:
+1. Switch to the correct python environment
+2. start the Jupyter notebook server
+3. start the rodeo server
+
+.bashrc is located in the ubuntu home directory /home/ubuntu/.bashrc
+
+```bash
+#Switches to the correct anaconda environment
+source activate [environmentName]
+
+#start jupyter notebook server
+jupyter notebook
+
+#start rodeo
+rodeo . host=0.0.0.0 port=8000
+```
 
 ## Rstudio Server
 Follow the installation steps on the RStudio Server website. In particular note the section regarding public keys to access the repositories. This must be done before the install or upgrade commandes will work.
