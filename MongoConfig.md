@@ -53,3 +53,7 @@ $ sudo mkdir -p /data/db
 #Change permissions on directory to allow read write for Mongo user
 sudo chmod -R 777 /data
 ```
+Set Mongo running using 
+```bash
+mongod
+```
