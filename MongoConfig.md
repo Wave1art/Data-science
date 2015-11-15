@@ -57,3 +57,11 @@ Set Mongo running using
 ```bash
 mongod
 ```
+
+# 2- Configuring a service to autostart MongoDB using UpStart service
+
+Inspired by articles <a href="https://www.digitalocean.com/community/tutorials/how-to-configure-a-linux-service-to-start-automatically-after-a-crash-or-reboot-part-1-practical-examples"> here</a> and a more general article about upstart <a href="https://www.digitalocean.com/community/tutorials/the-upstart-event-system-what-it-is-and-how-to-use-it">here</a>.
+
+The aim is to create a service that automatically starts on boot, stops and starts on reboot and respawns if it crashes.
+
+Create a specific 
