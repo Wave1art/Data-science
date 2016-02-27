@@ -109,6 +109,14 @@ To prevent the file from being world-readable, you should set up the correct per
 $ sudo chown root:root /swapfile 
 $ sudo chmod 0600 /swapfile
 ```
+### Additional configuration for Geospatial analysis
+Geospatial analysis and mapping using rgdal requires the installation of a number of extra unix libraries.
+``` bash
+sudo apt-get install libgdal-dev
+sudo apt-get install libproj-dev
+```
+
+
 
 ## Configuring Python
 1. Python
