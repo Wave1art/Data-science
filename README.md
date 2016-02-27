@@ -116,6 +116,14 @@ sudo apt-get install libgdal-dev
 sudo apt-get install libproj-dev
 ```
 
+Useful tools for geospatial analysis and mapping:
+- rgdal 
+- ggmap
+- rgeos
+- maptools
+- tmap - thematic maps
+- spatstat
+
 
 
 ## Configuring Python
